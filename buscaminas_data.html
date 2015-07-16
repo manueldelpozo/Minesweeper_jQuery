@@ -1,0 +1,42 @@
+ <!DOCTYPE html>
+<html lang="">
+<head>
+    <meta charset="UTF-8">
+    <title>buscabombas</title>
+	<meta name="Author" content="Manuel del Pozo"/>
+    <link rel="stylesheet" type="text/css" href="buscaminas.css">
+    <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.11.2/jquery.min.js"></script>
+</head>
+
+<body>
+    <h1>BUSCABOMBAS!</h1>
+    <input type="number" id="dimension" placeholder="dimensión" step="2"/>
+    <button id="start">Start!</button>
+    <span id="dim2">...¿prefieres introducir filas y columnas?</span>
+
+    <p>...o selecciona un nivel</p>
+    <button id="facil" class="nivel">FÁCIL (5x5)</button>
+    <button id="medio" class="nivel">MEDIO (8x8)</button>
+    <button id="dificil" class="nivel">DIFÍCIL (12x12)</button>
+
+    <span style="display:none">
+        <div id="time"></div>
+    </span>
+
+    <table id="tablero"></table>
+    <table id="records"></table>
+
+    <span style="display:none">SCORE:
+        <div id="score"></div><div id="win"></div>
+    </span>
+    
+
+    <div class="fin" style="display:none">
+        <input type="text" id="nombre" placeholder="tu nombre"/>
+        <button id="guardar">Guardar partida</button>
+    </div>
+
+    <script type="text/javascript" src="buscaminas.js"></script>
+</body>
+
+</html>

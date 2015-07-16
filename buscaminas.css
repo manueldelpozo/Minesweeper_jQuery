@@ -1,0 +1,146 @@
+
+body {
+    width: 800px;
+    margin: 0 auto;
+    padding-top: 50px;
+    background-image: url("cesped.jpg"); 
+    background-size: 300px, 300px;
+    font-weight: bold;
+    font-family: 'Arial Narrow', Arial, sans-serif;
+    color: white;
+    text-shadow: 10px 10px 5px 000; 
+}
+h1 {
+    text-shadow: 10px 10px 5px 000;
+    font-size: 60px;
+    padding: 5px;
+    margin: 5px;
+}
+input {
+    width: 110px;
+    height: 50px;
+    font-size: 20px;
+}
+button {
+    height: 55px;
+    width: 200px;
+    font-size: 22px;
+    opacity: 0.9
+}
+button.nivel {
+    margin-right: 20px;
+    width: 150px;
+    font-size: 15px;
+}
+table#tablero {
+    border-spacing: 5px;
+    border-collapse: separate;
+    background-image: url("tierra.jpg");
+    background-repeat: no-repeat;
+    background-size: 100%;
+    margin-top:30px;
+    margin-bottom: 30px;
+    opacity: 0.9
+}
+table#records {
+    border-spacing: 5px;
+    border-collapse: separate;
+    background-color: black;
+    opacity: 0.8;
+    border-radius: 20px; 
+    color: red;
+    margin-top:30px;
+    margin-bottom: 30px;
+    padding: 15px;
+    display: none;
+}
+td.casilla {
+    height: 30px;
+    width: 30px;
+    text-align: center;
+    background-image: url("tierra.jpg");
+    background-size: 100%;
+    background-repeat: no-repeat;
+    cursor: hand;
+    cursor: pointer;
+}
+td.puntos, th {
+    width: 25px;
+    padding: 15px;
+    border-style: dotted hidden;
+    font-weight: bold;
+}
+
+
+p {
+    font-size: 25px;
+    -webkit-text-stroke:0.8px black; 
+    font-weight: bolder;
+}
+
+span#dim2 {
+    text-decoration: underline;
+    font-size: 18px;
+    color: white;
+}
+span#dim2:hover {
+    color: cyan;
+    text-decoration: underline;
+}
+
+.cesped {
+    height: 0;
+    width: 0;
+    background-image: url("cesped.png");
+    background-size: 100%;
+    background-repeat: no-repeat;
+    opacity: 0;
+}
+.topo {
+    height: 30px;
+    width: 30px;
+    background-image: url("topo2.gif");
+    background-size: 30px 30px;
+    background-repeat: no-repeat;
+}
+.bomba {
+    height: 30px;
+    width: 30px;
+    background-image: url("mina.gif");
+    background-size: 100%;
+    background-repeat: no-repeat;
+}
+.bandera {
+    height: 30px;
+    width: 30px;
+    background-image: url("banderita.png");
+    background-size: 100%;
+    background-repeat: no-repeat;
+    background-color: cyan;
+}
+.numero {
+    height: 15px;
+    width: 15px;
+    text-align: center;
+    font-size: 30px;
+    color: white;
+}
+#score {
+    width: 50px;
+    background-color: black;
+    color: red;
+    font-size: 1em;
+    text-align: center;
+}
+#win {
+    -webkit-text-stroke:2px black; 
+    font-size: 40px;
+    color: green;
+}
+#time { 
+    width: 50px;
+    background-color: black;
+    color: red;
+    font-size: 1em;
+    text-align: center;
+}
